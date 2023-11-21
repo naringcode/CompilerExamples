@@ -98,6 +98,11 @@ int main()
     //     "/* 4322rewjoi123 */"
     //     "/* 42348fdsfdf34 */*/";
 
+    // TODO : 이거 작동 안 한다.
+    string str = 
+        "/*/*/* 4322rewjoi123 */"
+        "/* 42348fdsfdf34 */";
+
     vector<string> vec;
 
     if (true == Parse(str, &vec))
