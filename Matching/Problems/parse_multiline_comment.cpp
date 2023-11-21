@@ -9,11 +9,15 @@ int main()
     // 다중행 주석 체크
     regex commentReg{ "/\\*[^]*\\*/" };
 
+    // TEMP
+    // regex commentReg{ ".*/\\*.*" };
+    // regex commentReg{ ".*\\*/" };
+
     // string str = "/* 43243  */";
 
-    // 따로따로 인식하지 못 한다.
-    // 최대 길이 일치의 원칙(longest match principle)
     string str =
+        // "423/* 4322rewjoi123 */"
+        // "/* 42348fdsfdf34 */";
         "/* 4322rewjoi123 */"
         "/* 42348fdsfdf34 */";
 
